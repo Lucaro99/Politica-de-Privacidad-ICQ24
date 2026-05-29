@@ -147,12 +147,14 @@
         max-width: 40%;
         display: flex;
         justify-content: center;
+        align-self: flex-end;
+        margin-bottom: -70px;
       }
 
       .hero-image-right img {
         max-width: 100%;
         height: auto;
-        border-radius: 8px;
+        border-radius: 8px 8px 0 0;
       }
       .section-eyebrow {
         display: inline-block;
@@ -170,6 +172,7 @@
         line-height: 1.1;
         letter-spacing: -0.03em;
         margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif !important;
       }
       .hero h1 span {
         color: var(--brand-primary);
@@ -1018,6 +1021,9 @@
         .hero {
           padding: 48px 20px 48px;
         }
+        .hero-image-right {
+          margin-bottom: -48px;
+        }
         .compliance-strip {
           padding: 14px 20px;
         }
@@ -1105,18 +1111,13 @@
       <div class="hero-inner">
         <div class="hero-content-left">
           <div class="section-eyebrow" id="eyebrow-text">
-            ICQ24 INC · Política de Privacidad
+            Meta Privacy Policy
           </div>
 
           <h1 id="hero-title">
-            <span id="title-word1">Privacidad</span>&nbsp;<span id="title-word2"
-              >que</span
-            ><br />
-            <span
-              class="hero-title-blue"
-              id="title-word3"
-              style="color: var(--blue)"
-              >se cumple.</span
+            <span id="title-word1"
+              >Política De Privacidad <br />
+              ICQ24 INC</span
             >
           </h1>
 
@@ -1150,7 +1151,7 @@
           <div class="hero-meta-row">
             <div class="hero-tag">
               <span class="dot"></span
-              ><span id="tag-updated">Actualizado: 27 de mayo de 2026</span>
+              ><span id="tag-updated">Actualizado: 1 de junio de 2026</span>
             </div>
             <div class="hero-tag">
               <span style="color: var(--blue)"
@@ -1169,7 +1170,7 @@
 
         <div class="hero-image-right">
           <img
-            src="Assets/Personas Iconos/Persona iconos_4.png"
+            src="Assets/Persona_iconos_meta.png"
             alt="Ilustración de Privacidad"
           />
         </div>
@@ -2202,402 +2203,6 @@
           s.querySelector(".section-body-wrap").classList.add("open");
         }
       });
-
-      // ── LANGUAGE SWITCH ────────────────────────────────────────────
-      const translations = {
-        // Eyebrow
-        "eyebrow-text": {
-          es: "ICQ24 INC · Política de Privacidad",
-          en: "ICQ24 INC · Privacy Policy",
-        },
-        // Hero
-        "title-word1": { es: "Privacidad", en: "Privacy" },
-        "title-word2": { es: "que", en: "that" },
-        "title-word3": { es: "se cumple.", en: "is enforced." },
-        "tag-updated": {
-          es: "Actualizado: 27 de mayo de 2026",
-          en: "Last updated: May 27, 2026",
-        },
-        // Compliance
-        "comp-title": {
-          es: "Declaración de Cumplimiento Meta Platform Terms — Limited Use",
-          en: "Meta Platform Terms — Limited Use Compliance Statement",
-        },
-        // Sidebar
-        "sf-label": { es: "Documentos legales", en: "Legal documents" },
-        "sf-tos": { es: "Términos de Servicio", en: "Terms of Service" },
-        "sf-dd": { es: "Eliminación de datos", en: "Data Deletion" },
-        // Section titles
-        "s1-title": {
-          es: "Información que recopilamos",
-          en: "Information We Collect",
-        },
-        "s2-title": {
-          es: "Cómo utilizamos su información",
-          en: "How We Use Your Information",
-        },
-        "s3-title": {
-          es: "Almacenamiento y seguridad de la información",
-          en: "Data Storage & Security",
-        },
-        "s4-title": { es: "Compartición de información", en: "Data Sharing" },
-        "s5-title": { es: "Sus derechos", en: "Your Rights" },
-        "s6-title": { es: "Retención de datos", en: "Data Retention" },
-        "s7-title": { es: "Contáctenos", en: "Contact Us" },
-        // Section 1
-        "s1-intro": {
-          es: "Cuando usted interactúa con nuestros servicios a través de plataformas Meta, <strong>ICQ24 INC</strong> puede recopilar las siguientes categorías de información:",
-          en: "When you interact with our services through Meta platforms, <strong>ICQ24 INC</strong> may collect the following categories of information:",
-        },
-        "dt1-label": { es: "Perfil", en: "Profile" },
-        "dt1-1": {
-          es: "Nombre y foto de perfil",
-          en: "Name and profile picture",
-        },
-        "dt1-2": {
-          es: "Facebook Page-Scoped IDs",
-          en: "Facebook Page-Scoped IDs",
-        },
-        "dt1-3": { es: "Instagram User IDs", en: "Instagram User IDs" },
-        "dt1-4": { es: "WhatsApp identifiers", en: "WhatsApp identifiers" },
-        "dt2-label": { es: "Mensajes", en: "Messages" },
-        "dt2-1": { es: "Mensajes de texto", en: "Text messages" },
-        "dt2-2": { es: "Imágenes y videos", en: "Images and videos" },
-        "dt2-3": { es: "Archivos de audio", en: "Audio files" },
-        "dt2-4": { es: "Documentos", en: "Documents" },
-        "dt2-5": { es: "Respuestas interactivas", en: "Interactive responses" },
-        "dt3-label": { es: "Conversación", en: "Conversation" },
-        "dt3-1": { es: "Timestamps de mensajes", en: "Message timestamps" },
-        "dt3-2": { es: "Estados de entrega", en: "Delivery receipts" },
-        "dt3-3": { es: "Confirmaciones de lectura", en: "Read receipts" },
-        "dt3-4": {
-          es: "Metadatos de conversación",
-          en: "Conversation metadata",
-        },
-        "dt4-label": { es: "Página / Cuenta", en: "Page / Account" },
-        "dt4-1": {
-          es: "Info de Facebook Pages",
-          en: "Facebook Pages information",
-        },
-        "dt4-2": {
-          es: "Instagram Business Accounts",
-          en: "Instagram Business Accounts",
-        },
-        "dt4-3": { es: "Tokens de acceso OAuth", en: "OAuth access tokens" },
-        "dt4-4": {
-          es: "Configuración de integración",
-          en: "Integration configuration",
-        },
-        "dt5-label": { es: "Datos Técnicos", en: "Technical Data" },
-        "dt5-1": { es: "Dirección IP", en: "IP address" },
-        "dt5-2": {
-          es: "Identificadores de dispositivo",
-          en: "Device identifiers",
-        },
-        "dt5-3": {
-          es: "Tipo y versión de navegador",
-          en: "Browser type and version",
-        },
-        "dt5-4": {
-          es: "Logs de acceso del servidor",
-          en: "Server access logs",
-        },
-        "dt5-5": { es: "Timestamps de conexión", en: "Connection timestamps" },
-        "s1-notice": {
-          es: "<strong>Technical Data:</strong> Los datos técnicos —incluyendo dirección IP, identificadores de dispositivo, tipo de navegador y logs de servidor— se recopilan automáticamente al usar nuestros servicios con fines de seguridad, monitoreo y soporte técnico.",
-          en: "<strong>Technical Data:</strong> Technical data — including IP address, device identifiers, browser type, and server access logs — is collected automatically when you use our services for security, monitoring, and troubleshooting purposes.",
-        },
-        // Section 2
-        "s2-intro": {
-          es: "La información recopilada se utiliza <strong>exclusivamente</strong> para los siguientes propósitos operativos:",
-          en: "Collected information is used <strong>exclusively</strong> for the following operational purposes:",
-        },
-        pu1: {
-          es: "Facilitar la comunicación entre empresas y clientes a través de Facebook Messenger, Instagram Direct y WhatsApp.",
-          en: "Facilitating business-to-customer communication through Facebook Messenger, Instagram Direct, and WhatsApp.",
-        },
-        pu2: {
-          es: "Gestionar, enrutar y entregar mensajes entre empresas y usuarios a través de nuestra bandeja de entrada unificada.",
-          en: "Delivering, routing, and managing messages between businesses and their customers through our unified inbox.",
-        },
-        pu3: {
-          es: "Procesar eventos y notificaciones webhook provenientes de Meta para garantizar la entrega de mensajes en tiempo real.",
-          en: "Processing webhook events and real-time notifications from Meta to ensure timely message delivery.",
-        },
-        pu4: {
-          es: "Gestionar flujos de autenticación OAuth y mantener conexiones autorizadas entre empresas y plataformas Meta.",
-          en: "Managing OAuth authentication flows and maintaining authorized connections between businesses and Meta platforms.",
-        },
-        pu5: {
-          es: "Proporcionar estados de mensajes: enviado, entregado y leído.",
-          en: "Providing message delivery status updates: sent, delivered, and read.",
-        },
-        pu6: {
-          es: "Mantener la seguridad, integridad y disponibilidad de nuestros servicios, incluyendo prevención de accesos no autorizados y monitoreo técnico.",
-          en: "Maintaining the security, integrity, and availability of our services, including unauthorized access prevention and technical monitoring.",
-        },
-        "s2-no-title": {
-          es: "Lo que NO hacemos con sus datos",
-          en: "What we do NOT do with your data",
-        },
-        no1: {
-          es: "Utilizar datos de APIs de Meta para publicidad o targeting publicitario",
-          en: "Use data from Meta APIs for advertising or ad targeting",
-        },
-        no2: {
-          es: "Construir perfiles de usuario con fines de perfilamiento comercial",
-          en: "Build user profiles for commercial profiling purposes",
-        },
-        no3: {
-          es: "Vender, arrendar o comercializar información personal a terceros",
-          en: "Sell, rent, or trade personal information to third parties",
-        },
-        no4: {
-          es: "Usar los datos para cualquier propósito no descrito en esta política",
-          en: "Use data for any purpose not described in this Privacy Policy",
-        },
-        // Section 3
-        "st1-title": {
-          es: "Infraestructura segura",
-          en: "Secure Infrastructure",
-        },
-        "st1-desc": {
-          es: "Servidores ubicados en Estados Unidos, Puerto Rico y/o infraestructura cloud AWS us-east-1.",
-          en: "Servers in the United States, Puerto Rico, and/or AWS us-east-1 cloud infrastructure.",
-        },
-        "st2-title": { es: "Cifrado", en: "Encryption" },
-        "st2-desc": {
-          es: "TLS 1.2 o superior para datos en tránsito; cifrado en reposo aplicado a todos los datos almacenados.",
-          en: "TLS 1.2 or higher for data in transit; encryption at rest applied to all stored data.",
-        },
-        "st3-title": { es: "Control de acceso", en: "Access Control" },
-        "st3-desc": {
-          es: "Modelo de mínimo privilegio; acceso restringido al personal autorizado bajo acuerdos de confidencialidad.",
-          en: "Least-privilege model; access restricted to authorized personnel under confidentiality agreements.",
-        },
-        "st4-title": {
-          es: "Verificación de webhook",
-          en: "Webhook Verification",
-        },
-        "st4-desc": {
-          es: "Todos los payloads de webhook son verificados mediante firmas HMAC-SHA256 para garantizar autenticidad.",
-          en: "All webhook payloads are verified using HMAC-SHA256 signatures to ensure authenticity.",
-        },
-        "st5-title": { es: "Seguridad de tokens", en: "Token Security" },
-        "st5-desc": {
-          es: "Tokens de acceso almacenados de forma segura, usados solo para operaciones autorizadas y descartados al expirar.",
-          en: "Access tokens stored securely, used only for authorized API operations, and discarded when expired.",
-        },
-        "st6-title": { es: "Respuesta a incidentes", en: "Incident Response" },
-        "st6-desc": {
-          es: "Medidas de seguridad de estándar industrial implementadas para detectar, prevenir y responder a accesos no autorizados.",
-          en: "Industry-standard security measures in place to detect, prevent, and respond to unauthorized access.",
-        },
-        // Section 4
-        "s4-intro": {
-          es: "ICQ24 INC <strong>no vende</strong> su información personal. Los datos podrán compartirse únicamente en las siguientes circunstancias:",
-          en: "ICQ24 INC <strong>does not sell</strong> your personal information. Data may be shared only in the following circumstances:",
-        },
-        th1: { es: "Destinatario", en: "Recipient" },
-        th2: { es: "Propósito", en: "Purpose" },
-        th3: { es: "Datos compartidos", en: "Data Shared" },
-        "share1-who": {
-          es: 'Plataformas Meta<br/><small style="font-weight:400;color:var(--gray-mid)">Facebook, Instagram, WhatsApp</small>',
-          en: 'Meta Platforms<br/><small style="font-weight:400;color:var(--gray-mid)">Facebook, Instagram, WhatsApp</small>',
-        },
-        "share1-why": {
-          es: "Requerido para la entrega de mensajes y operación de APIs a través de canales oficiales de Meta.",
-          en: "Required for message delivery and API operation through official Meta channels.",
-        },
-        "share1-what": {
-          es: "Según lo requerido por las APIs de Meta para enrutar y entregar mensajes.",
-          en: "As required by Meta APIs to route and deliver messages.",
-        },
-        "share2-who": {
-          es: "Partners empresariales autorizados",
-          en: "Authorized Business Partners",
-        },
-        "share2-why": {
-          es: "Las empresas que usan nuestro servicio para comunicarse con sus clientes reciben los datos de conversación relevantes.",
-          en: "Businesses using our service to communicate with their customers receive the relevant conversation data.",
-        },
-        "share2-what": {
-          es: "Mensajes enviados, información básica de perfil y datos relacionados con la conversación.",
-          en: "Messages sent, basic profile information, and conversation-related data.",
-        },
-        "share3-who": {
-          es: "Autoridades legales y regulatorias",
-          en: "Legal & Regulatory Authorities",
-        },
-        "share3-why": {
-          es: "Cuando sea requerido por ley aplicable, regulación, autoridad gubernamental o proceso legal válido.",
-          en: "When required by applicable law, regulation, government authority, or lawful legal process.",
-        },
-        "share3-what": {
-          es: "Limitado a lo estrictamente requerido por la obligación legal aplicable.",
-          en: "Limited to what is strictly required by the applicable legal obligation.",
-        },
-        // Section 5
-        "s5-intro": {
-          es: "De conformidad con la legislación aplicable de protección de datos y las políticas de la plataforma Meta, usted tiene los siguientes derechos sobre su información personal:",
-          en: "In accordance with applicable data protection law and Meta's Platform policies, you have the following rights regarding your personal data:",
-        },
-        "r1-title": { es: "Acceso", en: "Access" },
-        "r1-desc": {
-          es: "Solicitar acceso a los datos personales que ICQ24 INC conserva sobre usted.",
-          en: "Request access to the personal data ICQ24 INC holds about you.",
-        },
-        "r2-title": { es: "Corrección", en: "Correction" },
-        "r2-desc": {
-          es: "Solicitar corrección o actualización de datos personales inexactos o incompletos.",
-          en: "Request correction or update of inaccurate or incomplete personal data.",
-        },
-        "r3-title": { es: "Eliminación", en: "Deletion" },
-        "r3-desc": {
-          es: "Solicitar la eliminación de sus datos personales de nuestros sistemas. Ver ruta de eliminación abajo.",
-          en: "Request deletion of your personal data from our systems. See deletion path below.",
-        },
-        "r4-title": { es: "Revocar OAuth", en: "Revoke OAuth" },
-        "r4-desc": {
-          es: "Revocar permisos de la app en cualquier momento desde su configuración de Facebook o Instagram.",
-          en: "Revoke app permissions at any time through your Facebook or Instagram account settings.",
-        },
-        "r5-title": {
-          es: "Dejar de recibir mensajes",
-          en: "Stop Receiving Messages",
-        },
-        "r5-desc": {
-          es: "Contactar directamente a la empresa para dejar de recibir comunicaciones.",
-          en: "Contact the business directly to stop receiving communications.",
-        },
-        "r6-title": { es: "Queja formal", en: "Formal Complaint" },
-        "r6-desc": {
-          es: "Presentar una queja ante la autoridad regulatoria competente si sus derechos son vulnerados.",
-          en: "File a complaint with the competent regulatory authority if your rights are violated.",
-        },
-        "deletion-title": {
-          es: "Cómo solicitar la eliminación de sus datos",
-          en: "How to request data deletion",
-        },
-        "del1-head": {
-          es: "Opción 1 — Automática",
-          en: "Option 1 — Automated",
-        },
-        "del1-desc": {
-          es: "Vaya a <strong>Configuración de Facebook → Apps y Sitios Web</strong> (o equivalente en Instagram), encuentre ICQ24, y elimine la app. Esto revoca automáticamente el acceso y programa la eliminación de datos.",
-          en: "Go to <strong>Facebook Settings → Apps and Websites</strong> (or Instagram equivalent), find ICQ24, and remove the app. This automatically revokes access and queues data deletion.",
-        },
-        "del2-head": { es: "Opción 2 — Por email", en: "Option 2 — By Email" },
-        "del2-desc": {
-          es: 'Envíe una solicitud de eliminación a <a href="mailto:privacy@icq24.com">privacy@icq24.com</a> indicando el nombre o identificador de su cuenta. Confirmaremos la recepción y procesaremos dentro de 30 días.',
-          en: 'Send a deletion request to <a href="mailto:privacy@icq24.com">privacy@icq24.com</a> including your account name or identifier. We will confirm receipt and process within 30 days.',
-        },
-        "del-btn": {
-          es: "Página de eliminación de datos",
-          en: "Data Deletion Page",
-        },
-        // Section 6
-        "s6-intro": {
-          es: "Conservamos los datos de mensajes e historial de conversación durante el tiempo requerido por la relación comercial, las obligaciones contractuales y la ley aplicable.",
-          en: "We retain message data and conversation history for as long as required by the business relationship, contractual obligations, and applicable law.",
-        },
-        "ret-title": {
-          es: "Ventana de eliminación: 30 días",
-          en: "30-Day Deletion Window",
-        },
-        "ret-desc": {
-          es: "Cuando solicite la eliminación de sus datos o desconecte la integración, sus datos serán eliminados en un plazo máximo de <b>30 días</b>. Los tokens de acceso vencidos o revocados se descartan automáticamente. Para fines de auditoría, conservamos únicamente un hash anónimo unidireccional que confirma que se procesó una eliminación — este registro no puede utilizarse para identificarle.",
-          en: "When you request deletion of your data or disconnect the integration, your data is removed within a maximum of <b>30 days</b>. Expired or revoked access tokens are discarded automatically. For audit purposes, we retain only an anonymized one-way hash confirming that a deletion was processed — this record cannot be used to identify you.",
-        },
-        "s6-governed": {
-          es: "Los períodos de retención de datos son regidos por:",
-          en: "Data retention periods are governed by:",
-        },
-        rl1: {
-          es: "La duración de la relación comercial entre ICQ24 y la empresa que utiliza nuestro servicio",
-          en: "The duration of the commercial relationship between ICQ24 and the business using our service",
-        },
-        rl2: {
-          es: "La ley federal aplicable de los Estados Unidos y regulaciones de protección de datos",
-          en: "Applicable U.S. federal law and data protection regulations",
-        },
-        rl3: {
-          es: "Los Meta Platform Terms y los requisitos de retención de datos de Meta",
-          en: "Meta Platform Terms and any applicable Meta data retention requirements",
-        },
-        rl4: {
-          es: "Necesidades operativas legítimas para logs de auditoría de seguridad e investigación de incidentes",
-          en: "Legitimate operational needs for security audit logs and incident investigation",
-        },
-        // Section 7
-        "s7-intro": {
-          es: "Para consultas relacionadas con privacidad, solicitudes de acceso, eliminación de datos o ejercicio de cualquiera de sus derechos, contáctenos mediante los siguientes canales:",
-          en: "For privacy-related inquiries, data access requests, deletion requests, or to exercise any of your rights, please contact us through the following channels:",
-        },
-        "contact-head": {
-          es: "ICQ24 INC — Contacto de Privacidad",
-          en: "ICQ24 INC — Data Privacy Contact",
-        },
-        cl1: { es: "Compañía", en: "Company" },
-        cl2: { es: "Email de Privacidad", en: "Privacy Email" },
-        cl3: { es: "Sitio web", en: "Website" },
-        cl4: { es: "Dirección", en: "Address" },
-        cl5: { es: "Eliminación de datos", en: "Data Deletion" },
-        // Cross-links
-        "cl-head": { es: "Políticas relacionadas", en: "Related Policies" },
-        "cl-sub": {
-          es: "Esta Política de Privacidad debe leerse junto con los siguientes documentos:",
-          en: "This Privacy Policy should be read together with the following documents:",
-        },
-        "cl-tos": { es: "Términos de Servicio", en: "Terms of Service" },
-        "cl-dd": { es: "Eliminación de Datos", en: "Data Deletion" },
-        "cl-web": { es: "Sitio Web ICQ24", en: "ICQ24 Official Website" },
-        // Footer
-        "ft-tagline": {
-          es: "Socio estratégico de implementación tecnológica para Contact Center, CX e ITSM. Diseñamos e implementamos Five9, Atlassian, Verint, Khomp y Odoo para organizaciones de LATAM y US.",
-          en: "Strategic technology implementation partner for Contact Center, CX and ITSM. We design and implement Five9, Atlassian, Verint, Khomp and Odoo for LATAM and US organizations.",
-        },
-        "fc1-title": { es: "Plataformas", en: "Platforms" },
-        "fc2-title": { es: "Legal", en: "Legal" },
-        "fc2-pp": { es: "Política de Privacidad", en: "Privacy Policy" },
-        "fc2-tos": { es: "Términos de Servicio", en: "Terms of Service" },
-        "fc2-dd": { es: "Eliminación de Datos", en: "Data Deletion" },
-        "fc2-cp": { es: "Política de Cookies", en: "Cookie Policy" },
-        "fc3-title": { es: "Empresa", en: "Company" },
-        "fc3-1": { es: "Quiénes somos", en: "About Us" },
-        "fc3-2": { es: "Blog & Recursos", en: "Blog & Resources" },
-        "fc3-3": { es: "Contacto", en: "Contact" },
-        "fc3-4": { es: "Soporte", en: "Support" },
-        "ft-copy": {
-          es: '© 2026 ICQ24 INC. Todos los derechos reservados · <a href="mailto:privacy@icq24.com" style="color:rgba(255,255,255,.4);text-decoration:none;">privacy@icq24.com</a>',
-          en: '© 2026 ICQ24 INC. All rights reserved · <a href="mailto:privacy@icq24.com" style="color:rgba(255,255,255,.4);text-decoration:none;">privacy@icq24.com</a>',
-        },
-        "ft-badges": {
-          es: "Meta Platform Terms Compliant · Limited Use Certified",
-          en: "Meta Platform Terms Compliant · Limited Use Certified",
-        },
-      };
-
-      // Sidebar nav translations
-      const sidebarNavData = {
-        0: { es: "Información que recopilamos", en: "Information We Collect" },
-        1: {
-          es: "Cómo usamos su información",
-          en: "How We Use Your Information",
-        },
-        2: { es: "Almacenamiento y seguridad", en: "Data Storage & Security" },
-        3: { es: "Compartición de datos", en: "Data Sharing" },
-        4: { es: "Sus derechos", en: "Your Rights" },
-        5: { es: "Retención de datos", en: "Data Retention" },
-        6: { es: "Contacto", en: "Contact Us" },
-        7: { es: "Políticas relacionadas", en: "Related Policies" },
-      };
-
-      // Compliance desc translations
-      const compDescTranslations = {
-        es: 'El uso y la transferencia de información recibida desde APIs de Meta por parte de <strong>ICQ24 INC</strong> cumple con los <a href="https://developers.facebook.com/terms/" target="_blank">Meta Platform Terms</a>, las <a href="https://developers.facebook.com/devpolicy/" target="_blank">Developer Policies</a> y los requisitos de <strong>Limited Use</strong> establecidos por Meta. Los datos recopilados a través de las APIs de Meta se utilizan exclusivamente para los fines descritos en esta política.',
-        en: 'The use and transfer of information received from Meta APIs by <strong>ICQ24 INC</strong> adheres to the <a href="https://developers.facebook.com/terms/" target="_blank">Meta Platform Terms</a>, <a href="https://developers.facebook.com/devpolicy/" target="_blank">Developer Policies</a>, and <strong>Limited Use</strong> requirements established by Meta. Data collected through Meta APIs is used exclusively for the purposes described in this policy.',
-      };
 
       function setLang(lang) {
         // Toggle buttons
