@@ -1137,6 +1137,7 @@
       </div>
     </section>
 
+    <!-- ── COMPLIANCE STRIP ────────────────────────────────────── -->
     <div class="compliance-strip">
       <div class="compliance-icon-wrap">
         <i class="fa-solid fa-shield"></i>
@@ -1161,6 +1162,7 @@
       </div>
     </div>
 
+    <!-- ── PAGE LAYOUT ────────────────────────────────────────────── -->
     <div class="page-layout">
       <aside class="sidebar">
         <div class="sidebar-card">
@@ -2146,23 +2148,32 @@
             }
           });
         },
-        { threshold: 0.3 },
+        { rootMargin: "-15% 0px -80% 0px", threshold: 0 },
       );
 
       sections.forEach((s) => observer.observe(s));
 
-      // Auto-open section when TOC clicked
       sideLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          const targetId = link.getAttribute("href").slice(1);
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+
+          if (!href.startsWith("#")) return;
+
+          e.preventDefault();
+
+          const targetId = href.slice(1);
           const target = document.getElementById(targetId);
+
           if (target) {
             const head = target.querySelector(".section-head");
             const body = target.querySelector(".section-body-wrap");
+
             if (head && body && !body.classList.contains("open")) {
               head.classList.add("open");
               body.classList.add("open");
             }
+
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
       });

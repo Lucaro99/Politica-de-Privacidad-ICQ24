@@ -1146,7 +1146,7 @@
             </a>
             <a
               class="sidebar-ext-link"
-              href="https://www.icq24.com/meta-data-deletion"
+              href="https://www.icq24.com/meta-terms-of-service"
               target="_blank"
             >
               <svg
@@ -1157,10 +1157,12 @@
                 stroke="currentColor"
                 stroke-width="2.5"
               >
-                <polyline points="3 6 5 6 21 6" />
-                <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
               </svg>
-              <span id="sf-dd">Data Deletion</span>
+              <span id="sf-dd">Terms of Service</span>
             </a>
             <a
               class="sidebar-ext-link"
@@ -1441,7 +1443,7 @@
             </a>
             <a
               class="cross-item"
-              href="https://www.icq24.com/meta-data-deletion"
+              href="https://www.icq24.com/meta-terms-of-service"
               target="_blank"
             >
               <div class="cross-item-icon">
@@ -1459,8 +1461,8 @@
                 </svg>
               </div>
               <div>
-                <strong>Data Deletion</strong>
-                <span>icq24.com/meta-data-deletion</span>
+                <strong>Terms of Service</strong>
+                <span>icq24.com/meta-terms-of-service</span>
               </div>
             </a>
             <a class="cross-item" href="https://www.icq24.com/" target="_blank">
@@ -1513,23 +1515,32 @@
             }
           });
         },
-        { threshold: 0.3 },
+        { rootMargin: "-15% 0px -80% 0px", threshold: 0 },
       );
 
       sections.forEach((s) => observer.observe(s));
 
-      // Auto-open section when TOC clicked
       sideLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          const targetId = link.getAttribute("href").slice(1);
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+
+          if (!href.startsWith("#")) return;
+
+          e.preventDefault();
+
+          const targetId = href.slice(1);
           const target = document.getElementById(targetId);
+
           if (target) {
             const head = target.querySelector(".section-head");
             const body = target.querySelector(".section-body-wrap");
+
             if (head && body && !body.classList.contains("open")) {
               head.classList.add("open");
               body.classList.add("open");
             }
+
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
       });
