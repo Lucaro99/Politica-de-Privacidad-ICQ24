@@ -1,0 +1,2201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | ICQ24 INC</title>
+    <meta
+      name="description"
+      content="Conozca cómo ICQ24 INC recopila, utiliza, almacena y protege la información en sus integraciones de mensajería con Meta, incluyendo Facebook Messenger, Instagram y WhatsApp."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3f2f44a158.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* ── RESET & BASE ─────────────────────────────────────── */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #ffffff;
+        color: #1e293b;
+        font-size: 15px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ==========================================================================
+        DESIGN SYSTEM & VARIABLES - ICQ24 / FIVE9 THEME
+        ========================================================================== */
+      :root {
+        /* Brand Colors */
+        --brand-primary: #0263e2;
+        --brand-primary-hover: #002d6d;
+        --brand-primary-light: #eff6ff;
+        --navy: #0a192f;
+        --yellow: #f0ad0f;
+        --yellow-bg: #fef6e4;
+        --red: #ed3d2e;
+        --red-bg: #fef4f2;
+        --green: #3b935d;
+        --green-bg: #e8f5ee;
+
+        /* Backgrounds */
+        --bg-white: #ffffff;
+        --bg-light: #f8fafc;
+        --bg-dark: #0f172a;
+        --bg-dark-elevated: #1e293b;
+
+        /* Typography Colors */
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --text-light: #94a3b8;
+        --text-inverse: #ffffff;
+
+        /* UI Elements */
+        --border-light: #e2e8f0;
+        --border-dark: #334155;
+
+        /* Spacing System (8pt Grid) */
+        --space-2: 8px;
+        --space-3: 12px;
+        --space-4: 16px;
+        --space-6: 24px;
+        --space-8: 32px;
+        --space-12: 48px;
+        --space-16: 64px;
+        --space-24: 96px;
+        --space-32: 128px;
+
+        /* Shadows (Soft Enterprise) */
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md:
+          0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        --shadow-lg:
+          0 10px 15px -3px rgba(0, 0, 0, 0.04),
+          0 4px 6px -2px rgba(0, 0, 0, 0.02);
+        --shadow-xl:
+          0 20px 25px -5px rgba(0, 0, 0, 0.05),
+          0 10px 10px -5px rgba(0, 0, 0, 0.02);
+
+        /* Radii */
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-pill: 9999px;
+      }
+
+      /* ── HERO ─────────────────────────────────────────────── */
+      .hero {
+        background: var(--bg-white);
+        padding: 72px 90px 70px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-decoration {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 420px;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--bg-light) 0%,
+          var(--brand-primary-light) 100%
+        );
+        clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        pointer-events: none;
+      }
+      .hero-decoration::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 70% 60% at 70% 40%,
+          rgba(0, 102, 255, 0.08) 0%,
+          transparent 70%
+        );
+      }
+      .hero-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        position: relative;
+        z-index: 2;
+        padding-right: 40px;
+      }
+      .hero-content-left {
+        flex: 1;
+        max-width: 60%;
+      }
+
+      .hero-image-right {
+        flex: 1;
+        max-width: 40%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        margin-bottom: -70px;
+      }
+
+      .hero-image-right img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+      }
+      .section-eyebrow {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-light);
+        margin-bottom: 16px;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 4vw, 50px);
+        font-weight: 800;
+        color: var(--brand-primary);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .hero h1 span {
+        color: var(--brand-primary);
+      }
+      .hero-desc {
+        font-size: 15px;
+        color: var(--gray-mid);
+        font-weight: 400;
+        line-height: 1.75;
+        max-width: 600px;
+        margin-bottom: 28px;
+      }
+      .hero-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--brand-primary-light);
+        border: 1px solid var(--border-dark);
+        border-radius: var(--radius-pill);
+        padding: 6px 14px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--navy);
+      }
+      .hero-tag .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--green);
+        flex-shrink: 0;
+      }
+
+      /* ── COMPLIANCE STRIP ─────────────────────────────────── */
+      .compliance-strip {
+        background: var(--brand-primary-light);
+        border-top: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--border-light);
+        padding: 16px 80px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .compliance-icon-wrap {
+        width: 38px;
+        height: 38px;
+        background: var(--bg-light);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        flex-shrink: 0;
+      }
+      .compliance-text-wrap strong {
+        display: inline;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-main);
+        margin-bottom: 3px;
+      }
+      .compliance-text-wrap p {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .compliance-text-wrap a {
+        color: var(--brand-primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .compliance-text-wrap a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── MAIN LAYOUT ──────────────────────────────────────── */
+      .page-layout {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 56px 40px 80px;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      /* ── SIDEBAR ──────────────────────────────────────────── */
+      .sidebar {
+        position: sticky;
+        top: 84px;
+      }
+      .sidebar-card {
+        background: var(--bg-dark);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+      .sidebar-header {
+        padding: 22px 20px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .sidebar-logo {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        margin-bottom: 4px;
+      }
+      .sidebar-logo img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .sidebar-sub {
+        font-size: 9px;
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.35);
+        text-transform: uppercase;
+      }
+      .sidebar-nav {
+        padding: 8px 0;
+      }
+      .sidebar-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.55);
+        transition: all 0.2s;
+        border-left: 3px solid transparent;
+      }
+      .sidebar-link:hover,
+      .sidebar-link.active {
+        color: var(--text-inverse);
+        background: rgba(255, 255, 255, 0.05);
+        border-left-color: var(--brand-primary);
+      }
+
+      .sidebar-num {
+        font-size: 10px;
+        font-weight: 800;
+        color: var(--brand-primary);
+        min-width: 20px;
+      }
+      .sidebar-divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.08);
+        margin: 8px 20px;
+      }
+      .sidebar-footer {
+        padding: 16px 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .sidebar-footer-label {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 10px;
+      }
+      .sidebar-ext-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #00aaff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 5px 0;
+        transition: color 0.2s;
+      }
+      .sidebar-ext-link:hover {
+        color: #fff;
+      }
+
+      /* ── CONTENT AREA ─────────────────────────────────────── */
+      .content {
+        min-width: 0;
+      }
+
+      /* Section card */
+      .policy-section {
+        background: var(--bg-white);
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        margin-bottom: 16px;
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+        transition: box-shadow 0.25s;
+      }
+      .policy-section:hover {
+        box-shadow: var(--shadow-hover);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 22px 28px;
+        cursor: pointer;
+        user-select: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+      }
+      .section-head.open {
+        border-bottom-color: var(--border-light);
+      }
+
+      .sec-num {
+        width: 40px;
+        height: 40px;
+        background: var(--bg-dark);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 900;
+        color: var(--brand-primary);
+        flex-shrink: 0;
+        letter-spacing: -0.02em;
+      }
+      .sec-title {
+        flex: 1;
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--text-main);
+        letter-spacing: -0.01em;
+      }
+      .sec-chevron {
+        width: 30px;
+        height: 30px;
+        background: var(--bg-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        flex-shrink: 0;
+        transition: all 0.3s;
+      }
+      .section-head.open .sec-chevron {
+        background: var(--brand-primary-light);
+        color: var(--brand-primary-hover);
+        transform: rotate(180deg);
+      }
+
+      .section-body-wrap {
+        display: none;
+        padding: 28px;
+      }
+      .section-body-wrap.open {
+        display: block;
+      }
+
+      /* Body typography */
+      .section-body-wrap p {
+        font-size: 14px;
+        color: var(--gray-mid);
+        font-weight: 400;
+        line-height: 1.75;
+        margin-bottom: 16px;
+      }
+      .section-body-wrap p:last-child {
+        margin-bottom: 0;
+      }
+      .section-body-wrap strong {
+        color: var(--navy-mid);
+        font-weight: 700;
+      }
+
+      .body-h4 {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--navy-mid);
+        margin: 24px 0 12px;
+      }
+      .body-h4:first-child {
+        margin-top: 0;
+      }
+
+      /* Data grid cards */
+      .data-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 12px;
+        margin: 16px 0;
+      }
+      .data-tile {
+        background: var(--brand-primary-light);
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .data-tile-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      .data-list-description {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--gray-mid);
+        line-height: 1.5;
+        margin-bottom: 12px;
+      }
+      .data-tile-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .ic-blue {
+        background: var(--bg-white);
+        color: var(--brand-primary);
+      }
+      .ic-yellow {
+        background: var(--yellow-bg);
+        color: var(--yellow);
+      }
+      .ic-green {
+        background: var(--green-bg);
+        color: var(--green);
+      }
+      .ic-red {
+        background: #fdeeec;
+        color: var(--red);
+      }
+      .ic-navy {
+        background: rgba(10, 25, 47, 0.08);
+        color: var(--navy);
+      }
+
+      .data-tile-label {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--navy-mid);
+      }
+      .data-tile ul {
+        list-style: none;
+        padding: 0;
+      }
+      .data-tile ul li {
+        font-size: 12.5px;
+        color: var(--gray-mid);
+        font-weight: 400;
+        padding: 3px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+        line-height: 1.4;
+      }
+      .data-tile ul li::before {
+        content: "·";
+        color: var(--blue);
+        font-weight: 900;
+        flex-shrink: 0;
+      }
+
+      /* Highlight notice */
+      .notice-box {
+        background: var(--brand-primary-light);
+        border: 1px solid var(--border-light);
+        border-left: 4px solid var(--brand-primary);
+        border-radius: 10px;
+        padding: 14px 18px;
+        font-size: 13.5px;
+        color: var(--navy-mid);
+        font-weight: 500;
+        line-height: 1.6;
+        margin: 16px 0;
+      }
+
+      /* Purpose list */
+      .purpose-list {
+        list-style: none;
+        padding: 0;
+      }
+      .purpose-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 11px 14px;
+        border-radius: 10px;
+        background: var(--bg-light);
+        border: 1px solid var(--border-light);
+        margin-bottom: 8px;
+        font-size: 13.5px;
+        color: var(--text-main);
+        line-height: 1.5;
+      }
+      .purpose-badge {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--brand-primary-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--brand-primary);
+        margin-top: 2px;
+      }
+
+      /* No-list */
+      .no-list {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0;
+      }
+      .no-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13.5px;
+        color: var(--text-main);
+        padding: 7px 0;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .no-list li:last-child {
+        border-bottom: none;
+      }
+      .no-badge {
+        font-size: 10px;
+        font-weight: 700;
+        background: #fdeeec;
+        color: var(--red);
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      /* Security grid */
+      .sec-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 12px;
+        margin: 16px 0;
+      }
+      .sec-tile {
+        background: var(--bg-light);
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        padding: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .sec-tile-icon {
+        width: 38px;
+        height: 38px;
+        background: var(--brand-primary-light);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--brand-primary);
+        flex-shrink: 0;
+      }
+      .sec-tile-content strong {
+        display: block;
+        font-size: 12.5px;
+        font-weight: 800;
+        color: var(--navy-mid);
+        margin-bottom: 4px;
+        margin-top: 4px;
+        line-height: 1.5;
+      }
+      .sec-tile-content span {
+        font-size: 12.5px;
+        color: var(--gray-mid);
+        line-height: 1.5;
+      }
+
+      /* Table */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13.5px;
+        margin: 16px 0;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border-light);
+      }
+      .data-table thead th {
+        background: var(--bg-dark);
+        color: var(--text-inverse);
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .data-table tbody tr:nth-child(even) {
+        background: var(--gray-bg);
+      }
+      .data-table tbody td {
+        padding: 13px 16px;
+        border-bottom: 1px solid var(--border-light);
+        color: var(--gray-mid);
+        vertical-align: top;
+        line-height: 1.5;
+      }
+      .data-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .data-table tbody td:first-child {
+        font-weight: 700;
+        color: var(--text-main);
+      }
+
+      /* Rights grid */
+      .rights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        margin: 16px 0;
+      }
+      .right-tile {
+        background: var(--bg-light);
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        padding: 18px 16px;
+        transition: all 0.2s;
+      }
+      .right-tile:hover {
+        border-color: var(--brand-primary);
+        background: var(--bg-light);
+      }
+      .right-tile-icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .right-tile strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 800;
+        color: var(--bg-dark);
+        margin-bottom: 5px;
+      }
+      .right-tile p {
+        font-size: 12px !important;
+        color: var(--text-muted) !important;
+        margin: 0 !important;
+        line-height: 1.5 !important;
+      }
+
+      /* Deletion options */
+      .deletion-opts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 16px 0;
+      }
+      .deletion-opt {
+        background: var(--bg-light);
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        padding: 18px;
+      }
+      .deletion-opt-head {
+        font-size: 12.5px;
+        font-weight: 800;
+        color: var(--blue-dark);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .deletion-opt p {
+        font-size: 13px !important;
+        color: var(--text-main) !important;
+        margin: 0 !important;
+        line-height: 1.55 !important;
+      }
+      .deletion-opt a {
+        color: var(--brand-primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      /* Retention card */
+      .retention-card {
+        background: var(--bg-dark);
+        border-radius: var(--radius-md);
+        padding: 22px;
+        margin: 16px 0;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .ret-icon {
+        color: var(--brand-primary);
+        flex-shrink: 0;
+      }
+      .ret-content strong {
+        display: block;
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--text-inverse) !important;
+        margin-bottom: 8px;
+      }
+      .ret-content span {
+        font-size: 13.5px;
+        color: var(--text-light) !important;
+        line-height: 1.65;
+      }
+      .ret-content span b {
+        color: var(--brand-primary);
+      }
+
+      /* Contact dark card */
+      .contact-dark {
+        background: var(--bg-dark);
+        border-radius: 14px;
+        padding: 28px;
+        margin: 16px 0;
+      }
+      .contact-dark-head {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text-inverse);
+        margin-bottom: 20px;
+      }
+      .contact-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 16px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .contact-item-icon {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--brand-primary);
+        flex-shrink: 0;
+      }
+      .contact-item label {
+        display: block;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--bg-light) !important;
+        margin-bottom: 3px;
+      }
+      .contact-item span {
+        font-size: 13px;
+        color: var(--text-inverse);
+        font-weight: 500;
+      }
+      .contact-item a {
+        font-size: 13px;
+        color: var(--brand-primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .contact-item a:hover {
+        text-decoration: underline;
+      }
+
+      /* CTA pill buttons */
+
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 28px;
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: var(--radius-pill);
+        cursor: pointer;
+        border: 2px solid transparent;
+        text-align: center;
+        text-decoration: none;
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s ease,
+          background-color 0.3s ease,
+          color 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      .btn-primary {
+        background-color: var(--brand-primary);
+        color: var(--text-inverse);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--brand-primary-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+        color: var(--text-inverse);
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--text-main);
+        border-color: var(--border-light);
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--brand-primary);
+        color: var(--brand-primary);
+        background-color: var(--brand-primary-light);
+        transform: translateY(-2px);
+      }
+
+      /* Cross-links bottom */
+      .cross-links {
+        background: var(--bg-light);
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        padding: 28px;
+        margin-top: 16px;
+      }
+      .cross-links h3 {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+      .cross-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 12px;
+      }
+      .cross-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px;
+        background: var(--text-inverse);
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+      .cross-item:hover {
+        border-color: var(--brand-primary);
+        background: var(--brand-primary-light);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-card);
+      }
+      .cross-item-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--bg-light);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--brand-primary);
+        flex-shrink: 0;
+      }
+      .cross-item strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 800;
+        color: var(--text-main);
+      }
+      .cross-item span {
+        font-size: 11.5px;
+        color: var(--text-muted);
+      }
+
+      /* ── RESPONSIVE ───────────────────────────────────────── */
+      @media (max-width: 960px) {
+        .page-layout {
+          grid-template-columns: 1fr;
+          padding: 40px 24px 60px;
+        }
+        .sidebar {
+          position: static;
+        }
+        .footer-top {
+          grid-template-columns: 1fr 1fr;
+          gap: 28px;
+        }
+      }
+      @media (max-width: 768px) {
+        .hero-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-content-left,
+        .hero-image-right {
+          max-width: 100%;
+        }
+
+        .hero-meta-row {
+          justify-content: center;
+        }
+      }
+      @media (max-width: 640px) {
+        .navbar {
+          padding: 0 20px;
+        }
+        .hero {
+          padding: 48px 20px 48px;
+        }
+        .hero-image-right {
+          margin-bottom: -48px;
+        }
+        .compliance-strip {
+          padding: 14px 20px;
+        }
+        .hero-decoration {
+          width: 200px;
+        }
+        .deletion-opts {
+          grid-template-columns: 1fr;
+        }
+        .data-grid,
+        .sec-grid,
+        .rights-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer {
+          padding: 40px 20px 20px;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      /* ── ANIMATIONS ───────────────────────────────────────── */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-inner > * {
+        animation: fadeUp 0.55s ease both;
+      }
+      .section-eyebrow {
+        animation-delay: 0.04s;
+      }
+      .hero h1 {
+        animation-delay: 0.1s;
+      }
+      .hero-desc {
+        animation-delay: 0.17s;
+      }
+      .hero-meta-row {
+        animation-delay: 0.24s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── HERO ──────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-decoration"></div>
+      <div class="hero-inner">
+        <div class="hero-content-left">
+          <div class="section-eyebrow" id="eyebrow-text">
+            Meta Privacy Policy
+          </div>
+
+          <h1 id="hero-title">
+            <span id="title-word1"
+              >Política De Privacidad <br />
+              ICQ24 INC</span
+            >
+          </h1>
+
+          <p class="hero-desc" id="hero-desc-es">
+            Esta Política de Privacidad describe cómo
+            <strong>ICQ24 INC</strong> ("nosotros", "nuestro" o "la compañía")
+            recopila, utiliza y protege su información cuando usted utiliza
+            nuestros servicios de integración de mensajería a través de
+            plataformas de Meta, incluyendo Facebook Messenger, Instagram y
+            WhatsApp.<br /><br />
+            El uso y la transferencia de información recibida desde las APIs de
+            Meta cumple con los <strong>Meta Platform Terms</strong>, las
+            <strong>Developer Policies</strong> y los requisitos de
+            <strong>Limited Use</strong>. Solo utilizamos los datos para los
+            fines descritos en esta política.
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="hero-tag">
+              <span class="dot"></span
+              ><span id="tag-updated">Actualizado: 1 de junio de 2026</span>
+            </div>
+            <div class="hero-tag">
+              <span style="color: var(--blue)"
+                ><i class="fa-solid fa-building"></i
+              ></span>
+              ICQ24 INC
+            </div>
+            <div class="hero-tag">
+              <span style="color: var(--blue)"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              Guaynabo, Puerto Rico · US
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-right">
+          <img
+            src="https://raw.githubusercontent.com/Lucaro99/Politica-de-Privacidad-ICQ24/main/Assets/Persona%20iconos_meta.webp"
+            alt="Ilustración de Privacidad"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── META COMPLIANCE STRIP ─────────────────────────────────── -->
+    <div class="compliance-strip">
+      <div class="compliance-icon-wrap">
+        <i class="fa-solid fa-shield"></i>
+      </div>
+      <div class="compliance-text-wrap">
+        <strong id="comp-title"
+          >Declaración de Cumplimiento Meta Platform Terms — Limited Use</strong
+        >
+        <p id="comp-desc">
+          El uso y la transferencia de información recibida desde APIs de Meta
+          por parte de <strong>ICQ24 INC </strong> cumple con los
+          <a href="https://developers.facebook.com/terms/" target="_blank"
+            >Meta Platform Terms</a
+          >, las
+          <a href="https://developers.facebook.com/devpolicy/" target="_blank"
+            >Developer Policies</a
+          >
+          y los requisitos de <strong>Limited Use </strong> establecidos por
+          Meta. Los datos recopilados a través de las APIs de Meta se utilizan
+          exclusivamente para los fines descritos en esta política.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── PAGE LAYOUT ────────────────────────────────────────────── -->
+    <div class="page-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-header">
+            <div class="sidebar-logo">
+              <img
+                src="https://raw.githubusercontent.com/Lucaro99/Politica-de-Privacidad-ICQ24/main/Assets/Logo%20ICQ24_Blanco.png"
+                alt=""
+              />
+            </div>
+            <div class="sidebar-sub">Privacy Policy</div>
+          </div>
+          <nav class="sidebar-nav" id="sidebar-nav">
+            <a class="sidebar-link active" href="#s1"
+              ><span class="sidebar-num">01</span
+              ><span
+                class="sn"
+                data-es="Información que recopilamos"
+                data-en="Information We Collect"
+                >Información que recopilamos</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s2"
+              ><span class="sidebar-num">02</span
+              ><span
+                class="sn"
+                data-es="Cómo usamos su información"
+                data-en="How We Use Your Information"
+                >Cómo usamos su información</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s3"
+              ><span class="sidebar-num">03</span
+              ><span
+                class="sn"
+                data-es="Almacenamiento y seguridad"
+                data-en="Data Storage & Security"
+                >Almacenamiento y seguridad</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s4"
+              ><span class="sidebar-num">04</span
+              ><span
+                class="sn"
+                data-es="Compartición de datos"
+                data-en="Data Sharing"
+                >Compartición de datos</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s5"
+              ><span class="sidebar-num">05</span
+              ><span class="sn" data-es="Sus derechos" data-en="Your Rights"
+                >Sus derechos</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s6"
+              ><span class="sidebar-num">06</span
+              ><span
+                class="sn"
+                data-es="Retención de datos"
+                data-en="Data Retention"
+                >Retención de datos</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s7"
+              ><span class="sidebar-num">07</span
+              ><span class="sn" data-es="Contacto" data-en="Contact Us"
+                >Contacto</span
+              ></a
+            >
+            <div class="sidebar-divider"></div>
+            <a class="sidebar-link" href="#crosslinks"
+              ><span class="sidebar-num">→</span
+              ><span
+                class="sn"
+                data-es="Políticas relacionadas"
+                data-en="Related Policies"
+                >Políticas relacionadas</span
+              ></a
+            >
+          </nav>
+          <div class="sidebar-footer">
+            <div class="sidebar-footer-label" id="sf-label">
+              Documentos legales
+            </div>
+            <a
+              class="sidebar-ext-link"
+              href="https://www.icq24.com/meta-terms-of-service"
+              target="_blank"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+              <span id="sf-tos">Términos de Servicio</span>
+            </a>
+            <a
+              class="sidebar-ext-link"
+              href="https://www.icq24.com/meta-data-deletion"
+              target="_blank"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="3 6 5 6 21 6" />
+                <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+              </svg>
+              <span id="sf-dd">Eliminación de datos</span>
+            </a>
+            <a
+              class="sidebar-ext-link"
+              href="https://www.icq24.com/"
+              target="_blank"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+              </svg>
+              www.icq24.com
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="content">
+        <!-- ── SECTION 1 ── -->
+        <div class="policy-section" id="s1">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">01</div>
+            <div class="sec-title" id="s1-title">
+              Información que recopilamos
+            </div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s1-intro">
+              Cuando usted interactúa con nuestros servicios a través de
+              plataformas Meta, <strong>ICQ24 INC</strong> puede recopilar las
+              siguientes categorías de información:
+            </p>
+
+            <div class="data-grid">
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt1-label">Perfil</div>
+                </div>
+                <ul>
+                  <li id="dt1-1">Nombre y foto de perfil</li>
+                  <li id="dt1-2">
+                    Identificadores específicos de la plataforma, como:
+                    Page-Scoped IDs, Instagram User IDs, identificadores
+                    equivalentes proporcionados por Meta.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-message"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt2-label">Mensajes</div>
+                </div>
+                <ul>
+                  <li id="dt2-1">Mensajes de texto</li>
+                  <li id="dt2-2">Imágenes y videos</li>
+                  <li id="dt2-3">Archivos de audio</li>
+                  <li id="dt2-4">Documentos</li>
+                  <li id="dt2-5">
+                    Respuestas interactivas enviadas a través de la plataforma
+                  </li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt3-label">
+                    Datos de conversación
+                  </div>
+                </div>
+                <ul>
+                  <li id="dt3-1">Timestamps de mensajes</li>
+                  <li id="dt3-2">Estados de entrega</li>
+                  <li id="dt3-3">Confirmaciones de lectura</li>
+                  <li id="dt3-4">Metadatos de conversación</li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt4-label">
+                    Datos de página y cuenta
+                  </div>
+                </div>
+                <div class="data-list-description">
+                  Cuando una cuenta empresarial se conecta mediante OAuth,
+                  podemos recopilar:
+                </div>
+                <ul>
+                  <li id="dt4-1">Información de Facebook Pages</li>
+                  <li id="dt4-2">Detalles de cuentas de Instagram Business</li>
+                  <li id="dt4-3">Tokens de acceso asociados</li>
+                  <li id="dt4-4">Información de autorización y conexión</li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-suitcase"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt5-label">
+                    Datos Técnicos
+                  </div>
+                </div>
+                <div class="data-list-description">
+                  Cuando usted utiliza nuestros servicios, recopilamos
+                  automáticamente información técnica para fines de seguridad,
+                  monitoreo y soporte, incluyendo:
+                </div>
+                <ul>
+                  <li id="dt5-1">Dirección IP</li>
+                  <li id="dt5-2">Identificadores de dispositivo</li>
+                  <li id="dt5-3">Tipo y versión de navegador</li>
+                  <li id="dt5-4">Logs de acceso del servidor</li>
+                  <li id="dt5-5">Timestamps de conexión</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="notice-box" id="s1-notice">
+              <strong>Technical Data:</strong> Los datos técnicos —incluyendo
+              dirección IP, identificadores de dispositivo, tipo de navegador y
+              logs de servidor— se recopilan automáticamente al usar nuestros
+              servicios con fines de seguridad, monitoreo y soporte técnico.
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 2 ── -->
+        <div class="policy-section" id="s2">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">02</div>
+            <div class="sec-title" id="s2-title">
+              Cómo utilizamos su información
+            </div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s2-intro">
+              La información recopilada se utiliza
+              <strong>exclusivamente</strong> para los siguientes propósitos
+              operativos:
+            </p>
+
+            <ul class="purpose-list" id="purpose-list">
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-message"></i>
+                </div>
+                <span id="pu1"
+                  >Facilitar la comunicación entre empresas y clientes a través
+                  de Facebook Messenger, Instagram Direct y WhatsApp.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <span id="pu2"
+                  >Gestionar, enrutar y entregar mensajes entre empresas y
+                  usuarios a través de nuestra bandeja de entrada
+                  unificada.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span id="pu3"
+                  >Procesar eventos y notificaciones webhook provenientes de
+                  Meta para garantizar la entrega de mensajes en tiempo
+                  real.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <span id="pu4"
+                  >Gestionar flujos de autenticación OAuth y mantener conexiones
+                  autorizadas entre empresas y plataformas Meta.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <span id="pu5"
+                  >Proporcionar estados de mensajes: enviado, entregado y
+                  leído.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <span id="pu6"
+                  >Mantener la seguridad, integridad y disponibilidad de
+                  nuestros servicios, incluyendo prevención de accesos no
+                  autorizados y monitoreo técnico.</span
+                >
+              </li>
+            </ul>
+
+            <div class="body-h4" id="s2-no-title">
+              Lo que NO hacemos con sus datos
+            </div>
+            <ul class="no-list" id="no-list">
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no1"
+                  >Utilizar datos de APIs de Meta para publicidad o targeting
+                  publicitario</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no2"
+                  >Construir perfiles de usuario con fines de perfilamiento
+                  comercial</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no3"
+                  >Vender, arrendar o comercializar información personal a
+                  terceros</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no4"
+                  >Usar los datos para cualquier propósito no descrito en esta
+                  política</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── SECTION 3 ── -->
+        <div class="policy-section" id="s3">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">03</div>
+            <div class="sec-title" id="s3-title">
+              Almacenamiento y seguridad de la información
+            </div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <div class="sec-grid">
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st1-title">Infraestructura segura</strong>
+                  <span id="st1-desc"
+                    >Toda la información se almacena en servidores seguros
+                    ubicados en <strong>Estados Unidos, Puerto Rico</strong> y/o
+                    en infraestructura cloud correspondiente.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st2-title">Cifrado</strong>
+                  <span id="st2-desc"
+                    >Los datos se protegen mediante cifrado en tránsito y en
+                    reposo, usando estándares como
+                    <strong>TLS 1.2 o superior.</strong></span
+                  >
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st3-title">Control de acceso</strong>
+                  <span id="st3-desc"
+                    >Implementamos medidas de seguridad alineadas con estándares
+                    de la industria para prevenir acceso no autorizado,
+                    alteración, pérdida o divulgación de información.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st4-title">Verificación de webhook</strong>
+                  <span id="st4-desc"
+                    >Los payloads de webhook son verificados mediante firmas
+                    <strong>HMAC-SHA256</strong> para validar su autenticidad.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st5-title">Seguridad de tokens</strong>
+                  <span id="st5-desc"
+                    >El acceso a la información está restringido exclusivamente
+                    a personal autorizado bajo obligaciones de confidencialidad
+                    y principio de mínimo privilegio.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st6-title">Respuesta a incidentes</strong>
+                  <span id="st6-desc"
+                    >Medidas de seguridad de estándar industrial implementadas
+                    para detectar, prevenir y responder a accesos no
+                    autorizados.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 4 ── -->
+        <div class="policy-section" id="s4">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">04</div>
+            <div class="sec-title" id="s4-title">
+              Compartición de información
+            </div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s4-intro">
+              <strong>ICQ24 INC no vende</strong> La información podrá
+              compartirse únicamente con:
+            </p>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th id="th1">Destinatario</th>
+                  <th id="th2">Propósito</th>
+                  <th id="th3">Datos compartidos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="share1-who">
+                    Meta Platforms<br /><small
+                      style="font-weight: 400; color: var(--gray-mid)"
+                      >Facebook, Instagram, WhatsApp</small
+                    >
+                  </td>
+                  <td id="share1-why">
+                    Cuando sea necesario para la entrega de mensajes y el
+                    funcionamiento de Facebook Messenger, Instagram y WhatsApp
+                    APIs.
+                  </td>
+                  <td id="share1-what">
+                    Según lo requerido por las APIs de Meta para enrutar y
+                    entregar mensajes.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="share2-who">Partners empresariales autorizados</td>
+                  <td id="share2-why">
+                    Las empresas que usan nuestro servicio para comunicarse con
+                    sus clientes reciben los datos de conversación relevantes.
+                  </td>
+                  <td id="share2-what">
+                    Mensajes enviados, información básica de perfil y datos
+                    relacionados con la conversación.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="share3-who">Autoridades legales y regulatorias</td>
+                  <td id="share3-why">
+                    Cuando sea requerido por ley aplicable, regulación,
+                    autoridad gubernamental o proceso legal válido.
+                  </td>
+                  <td id="share3-what">
+                    Limitado a lo estrictamente requerido por la obligación
+                    legal aplicable.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ── SECTION 5 ── -->
+        <div class="policy-section" id="s5">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">05</div>
+            <div class="sec-title" id="s5-title">Sus derechos</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s5-intro">
+              De conformidad con la legislación aplicable de protección de datos
+              y las políticas de la plataforma Meta, usted tiene los siguientes
+              derechos sobre su información personal:
+            </p>
+
+            <div class="rights-grid">
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-clipboard"></i>
+                </div>
+                <strong id="r1-title">Acceso</strong>
+                <p id="r1-desc">
+                  Solicitar acceso a los datos personales que ICQ24 INC conserva
+                  sobre usted.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-pencil"></i>
+                </div>
+                <strong id="r2-title">Corrección</strong>
+                <p id="r2-desc">
+                  Solicitar corrección o actualización de datos personales
+                  inexactos o incompletos.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <strong id="r3-title">Eliminación</strong>
+                <p id="r3-desc">
+                  Solicitar la eliminación de sus datos personales de nuestros
+                  sistemas. Ver ruta de eliminación abajo.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-lock-open"></i>
+                </div>
+                <strong id="r4-title">Revocar OAuth</strong>
+                <p id="r4-desc">
+                  Revocar permisos de la app en cualquier momento desde su
+                  configuración de Facebook o Instagram.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <strong id="r5-title">Dejar de recibir mensajes</strong>
+                <p id="r5-desc">
+                  Contactar directamente a la empresa para dejar de recibir
+                  comunicaciones.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <strong id="r6-title">Queja formal</strong>
+                <p id="r6-desc">
+                  Presentar una queja ante la autoridad regulatoria competente
+                  si sus derechos son vulnerados.
+                </p>
+              </div>
+            </div>
+
+            <div class="body-h4" id="deletion-title" style="margin-top: 24px">
+              Cómo solicitar la eliminación de sus datos
+            </div>
+            <div class="deletion-opts">
+              <div class="deletion-opt">
+                <div class="deletion-opt-head">
+                  <i class="fa-solid fa-link"></i>
+                  <span id="del1-head">Opción 1 — Automática</span>
+                </div>
+                <p id="del1-desc">
+                  Vaya a
+                  <strong>Configuración de Facebook → Apps y Sitios Web</strong>
+                  (o equivalente en Instagram), encuentre ICQ24, y elimine la
+                  app. Esto revoca automáticamente el acceso y programa la
+                  eliminación de datos.
+                </p>
+              </div>
+              <div class="deletion-opt">
+                <div class="deletion-opt-head">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span id="del2-head">Opción 2 — Por email</span>
+                </div>
+                <p id="del2-desc">
+                  Envíe una solicitud de eliminación a
+                  <a href="mailto:privacy@icq24.com">privacy@icq24.com</a>
+                  indicando el nombre o identificador de su cuenta.
+                  Confirmaremos la recepción y procesaremos dentro de 30 días.
+                </p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <a
+                class="btn-primary"
+                href="https://www.icq24.com/meta-data-deletion"
+                target="_blank"
+              >
+                <i class="fa-solid fa-trash-can"></i>
+                <span id="del-btn">Página de eliminación de datos</span>
+              </a>
+              <a class="btn-secondary" href="mailto:privacy@icq24.com">
+                <i class="fa-solid fa-envelope"></i>
+                privacy@icq24.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 6 ── -->
+        <div class="policy-section" id="s6">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">06</div>
+            <div class="sec-title" id="s6-title">Retención de datos</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s6-intro">
+              Conservamos los datos de mensajes e historial de conversación
+              durante el tiempo requerido por la relación comercial, las
+              obligaciones contractuales y la ley aplicable.
+            </p>
+
+            <div class="retention-card">
+              <div class="ret-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="ret-content">
+                <strong id="ret-title">Ventana de eliminación: 30 días</strong>
+                <span id="ret-desc"
+                  >Cuando solicite la eliminación de sus datos o desconecte la
+                  integración, sus datos serán eliminados en un plazo máximo de
+                  <b>30 días</b>. Los tokens de acceso vencidos o revocados se
+                  descartan automáticamente. Para fines de auditoría,
+                  conservamos únicamente un hash anónimo unidireccional que
+                  confirma que se procesó una eliminación — este registro no
+                  puede utilizarse para identificarle.</span
+                >
+              </div>
+            </div>
+
+            <p id="s6-governed">
+              Los períodos de retención de datos son regidos por:
+            </p>
+            <ul class="no-list" id="ret-list" style="margin-top: 10px">
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl1"
+                  >La duración de la relación comercial entre ICQ24 y la empresa
+                  que utiliza nuestro servicio</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl2"
+                  >La ley federal aplicable de los Estados Unidos y regulaciones
+                  de protección de datos</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl3"
+                  >Los Meta Platform Terms y los requisitos de retención de
+                  datos de Meta</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl4"
+                  >Necesidades operativas legítimas para logs de auditoría de
+                  seguridad e investigación de incidentes</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── SECTION 7 ── -->
+        <div class="policy-section" id="s7">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">07</div>
+            <div class="sec-title" id="s7-title">Contáctenos</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s7-intro">
+              Para consultas relacionadas con privacidad, solicitudes de acceso,
+              eliminación de datos o ejercicio de cualquiera de sus derechos,
+              contáctenos mediante los siguientes canales:
+            </p>
+
+            <div class="contact-dark">
+              <div class="contact-dark-head" id="contact-head">
+                ICQ24 INC — Contacto de Privacidad
+              </div>
+              <div class="contact-grid-2">
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <div>
+                    <label id="cl1">Compañía</label>
+                    <span>ICQ24 INC</span>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <label id="cl2">Email de Privacidad</label>
+                    <a href="mailto:privacy@icq24.com">privacy@icq24.com</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <label id="cl3">Teléfono</label>
+                    <a href="tel:+1 805-888-0024">+1 805-888-0024</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                  <div>
+                    <label id="cl3">Sitio web</label>
+                    <a href="https://www.icq24.com/" target="_blank"
+                      >www.icq24.com</a
+                    >
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <label id="cl4">Dirección</label>
+                    <span
+                      >URB COLLEGEVILLE 2009 CALLE ABERDEEN<br />GUAYNABO PR
+                      00969-4730 · USA</span
+                    >
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                  <div>
+                    <label id="cl5">Eliminación de datos</label>
+                    <a
+                      href="https://www.icq24.com/meta-data-deletion"
+                      target="_blank"
+                      >icq24.com/meta-data-deletion</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CROSS-LINKS ── -->
+        <div class="cross-links" id="crosslinks">
+          <h3 id="cl-head">Políticas relacionadas</h3>
+          <p
+            style="font-size: 13px; color: var(--gray-mid); margin-bottom: 16px"
+            id="cl-sub"
+          >
+            Esta Política de Privacidad debe leerse junto con los siguientes
+            documentos:
+          </p>
+          <div class="cross-grid">
+            <a
+              class="cross-item"
+              href="https://www.icq24.com/meta-terms-of-service"
+              target="_blank"
+            >
+              <div class="cross-item-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+              </div>
+              <div>
+                <strong id="cl-tos">Términos de Servicio</strong>
+                <span>icq24.com/meta-terms-of-service</span>
+              </div>
+            </a>
+            <a
+              class="cross-item"
+              href="https://www.icq24.com/meta-data-deletion"
+              target="_blank"
+            >
+              <div class="cross-item-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="3 6 5 6 21 6" />
+                  <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+                  <path d="M10 11v6M14 11v6" />
+                </svg>
+              </div>
+              <div>
+                <strong id="cl-dd">Eliminación de Datos</strong>
+                <span>icq24.com/meta-data-deletion</span>
+              </div>
+            </a>
+            <a class="cross-item" href="https://www.icq24.com/" target="_blank">
+              <div class="cross-item-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+                </svg>
+              </div>
+              <div>
+                <strong id="cl-web">ICQ24 Official Website</strong>
+                <span>www.icq24.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // ── SECTION TOGGLE ─────────────────────────────────────────────
+      function toggleSec(header) {
+        const section = header.closest(".policy-section");
+        const body = section.querySelector(".section-body-wrap");
+        header.classList.toggle("open");
+        body.classList.toggle("open");
+      }
+
+      // ── ACTIVE SIDEBAR LINK ────────────────────────────────────────
+      const sections = document.querySelectorAll(".policy-section[id]");
+      const sideLinks = document.querySelectorAll(".sidebar-link");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              sideLinks.forEach((l) => l.classList.remove("active"));
+              const active = document.querySelector(
+                `.sidebar-link[href="#${e.target.id}"]`,
+              );
+              if (active) active.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+
+      sections.forEach((s) => observer.observe(s));
+
+      // Auto-open section when TOC clicked
+      sideLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const targetId = link.getAttribute("href").slice(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            const head = target.querySelector(".section-head");
+            const body = target.querySelector(".section-body-wrap");
+            if (head && body && !body.classList.contains("open")) {
+              head.classList.add("open");
+              body.classList.add("open");
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

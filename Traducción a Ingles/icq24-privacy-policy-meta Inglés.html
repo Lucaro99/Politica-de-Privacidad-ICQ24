@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eliminación de Datos | ICQ24 INC</title>
+    <title>Privacy Policy | ICQ24 INC</title>
     <meta
       name="description"
-      content="Conozca cómo solicitar la eliminación de sus datos asociados con nuestra integración con Meta, incluyendo opciones automáticas y por correo electrónico."
+      content="Conozca cómo ICQ24 INC recopila, utiliza, almacena y protege la información en sus integraciones de mensajería con Meta, incluyendo Facebook Messenger, Instagram y WhatsApp."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
@@ -209,6 +209,50 @@
         border-radius: 50%;
         background: var(--green);
         flex-shrink: 0;
+      }
+
+      /* ── COMPLIANCE STRIP ─────────────────────────────────── */
+      .compliance-strip {
+        background: var(--brand-primary-light);
+        border-top: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--border-light);
+        padding: 16px 80px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .compliance-icon-wrap {
+        width: 38px;
+        height: 38px;
+        background: var(--bg-light);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        flex-shrink: 0;
+      }
+      .compliance-text-wrap strong {
+        display: inline;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-main);
+        margin-bottom: 3px;
+      }
+      .compliance-text-wrap p {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .compliance-text-wrap a {
+        color: var(--brand-primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .compliance-text-wrap a:hover {
+        text-decoration: underline;
       }
 
       /* ── MAIN LAYOUT ──────────────────────────────────────── */
@@ -980,7 +1024,9 @@
         .hero-image-right {
           margin-bottom: -48px;
         }
-
+        .compliance-strip {
+          padding: 14px 20px;
+        }
         .hero-decoration {
           width: 200px;
         }
@@ -1039,28 +1085,33 @@
       <div class="hero-inner">
         <div class="hero-content-left">
           <div class="section-eyebrow" id="eyebrow-text">
-            Eliminación de Datos | ICQ24 INC
+            Meta Privacy Policy
           </div>
 
           <h1 id="hero-title">
             <span id="title-word1"
-              >Eliminación de Datos <br />
+              >Privacy Policy <br />
               ICQ24 INC</span
             >
           </h1>
 
           <p class="hero-desc" id="hero-desc-es">
-            Usted puede solicitar la eliminación de los datos asociados con
-            nuestra integración con la plataforma de Meta en cualquier momento.
-            Ofrecemos dos formas de hacerlo:
+            This Privacy Policy describes how
+            <strong>ICQ24 INC</strong> ("we", "our", or "the company") collects,
+            uses, and protects your information when you use our messaging
+            integration services through Meta platforms, including Facebook
+            Messenger, Instagram, and WhatsApp.<br /><br />
+            The use and transfer of information received from Meta APIs comply
+            with the <strong>Meta Platform Terms</strong>, the
+            <strong>Developer Policies</strong>, and the requirements of
+            <strong>Limited Use</strong>. We only use the data for the purposes
+            described in this policy.
           </p>
 
           <div class="hero-meta-row">
             <div class="hero-tag">
               <span class="dot"></span
-              ><span id="tag-updated"
-                >Última actualización: 27 de mayo de 2026</span
-              >
+              ><span id="tag-updated">Updated: June 1, 2026</span>
             </div>
             <div class="hero-tag">
               <span style="color: var(--blue)"
@@ -1080,15 +1131,37 @@
         <div class="hero-image-right">
           <img
             src="https://raw.githubusercontent.com/Lucaro99/Politica-de-Privacidad-ICQ24/main/Assets/Persona%20iconos_meta.webp"
-            alt="Ilustración de Privacidad"
+            alt="Privacy Illustration"
           />
         </div>
       </div>
     </section>
 
-    <!-- ── PAGE LAYOUT ────────────────────────────────────────────── -->
+    <div class="compliance-strip">
+      <div class="compliance-icon-wrap">
+        <i class="fa-solid fa-shield"></i>
+      </div>
+      <div class="compliance-text-wrap">
+        <strong id="comp-title"
+          >Meta Platform Terms Compliance Statement — Limited Use</strong
+        >
+        <p id="comp-desc">
+          The use and transfer of information received from Meta APIs by
+          <strong>ICQ24 INC </strong> comply with the
+          <a href="https://developers.facebook.com/terms/" target="_blank"
+            >Meta Platform Terms</a
+          >, the
+          <a href="https://developers.facebook.com/devpolicy/" target="_blank"
+            >Developer Policies</a
+          >
+          and the <strong>Limited Use </strong> requirements set by Meta. The
+          data collected through Meta APIs is used exclusively for the purposes
+          described in this policy.
+        </p>
+      </div>
+    </div>
+
     <div class="page-layout">
-      <!-- SIDEBAR -->
       <aside class="sidebar">
         <div class="sidebar-card">
           <div class="sidebar-header">
@@ -1098,38 +1171,84 @@
                 alt=""
               />
             </div>
-            <div class="sidebar-sub">Eliminación de Datos</div>
+            <div class="sidebar-sub">Privacy Policy</div>
           </div>
           <nav class="sidebar-nav" id="sidebar-nav">
             <a class="sidebar-link active" href="#s1"
               ><span class="sidebar-num">01</span
-              ><span class="sn">Cómo solicitar la eliminación</span></a
+              ><span
+                class="sn"
+                data-es="Información que recopilamos"
+                data-en="Information We Collect"
+                >Information We Collect</span
+              ></a
             >
             <a class="sidebar-link" href="#s2"
               ><span class="sidebar-num">02</span
-              ><span class="sn">Qué se elimina</span></a
+              ><span
+                class="sn"
+                data-es="Cómo usamos su información"
+                data-en="How We Use Your Information"
+                >How We Use Your Information</span
+              ></a
             >
             <a class="sidebar-link" href="#s3"
               ><span class="sidebar-num">03</span
-              ><span class="sn">Tiempo de procesamiento</span></a
+              ><span
+                class="sn"
+                data-es="Almacenamiento y seguridad"
+                data-en="Data Storage & Security"
+                >Data Storage & Security</span
+              ></a
             >
             <a class="sidebar-link" href="#s4"
               ><span class="sidebar-num">04</span
-              ><span class="sn">Contacto</span></a
+              ><span
+                class="sn"
+                data-es="Compartición de datos"
+                data-en="Data Sharing"
+                >Data Sharing</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s5"
+              ><span class="sidebar-num">05</span
+              ><span class="sn" data-es="Sus derechos" data-en="Your Rights"
+                >Your Rights</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s6"
+              ><span class="sidebar-num">06</span
+              ><span
+                class="sn"
+                data-es="Retención de datos"
+                data-en="Data Retention"
+                >Data Retention</span
+              ></a
+            >
+            <a class="sidebar-link" href="#s7"
+              ><span class="sidebar-num">07</span
+              ><span class="sn" data-es="Contacto" data-en="Contact Us"
+                >Contact Us</span
+              ></a
             >
             <div class="sidebar-divider"></div>
             <a class="sidebar-link" href="#crosslinks"
               ><span class="sidebar-num">→</span
-              ><span class="sn">Políticas relacionadas</span></a
+              ><span
+                class="sn"
+                data-es="Políticas relacionadas"
+                data-en="Related Policies"
+                >Related Policies</span
+              ></a
             >
           </nav>
           <div class="sidebar-footer">
             <div class="sidebar-footer-label" id="sf-label">
-              Documentos legales
+              Legal Documents
             </div>
             <a
               class="sidebar-ext-link"
-              href="https://www.icq24.com/meta-privacy-policy"
+              href="https://www.icq24.com/meta-terms-of-service"
               target="_blank"
             >
               <svg
@@ -1145,7 +1264,7 @@
                 />
                 <polyline points="14 2 14 8 20 8" />
               </svg>
-              <span id="sf-tos">Política de Privacidad</span>
+              <span id="sf-tos">Terms of Service</span>
             </a>
             <a
               class="sidebar-ext-link"
@@ -1163,7 +1282,7 @@
                 <polyline points="3 6 5 6 21 6" />
                 <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
               </svg>
-              <span id="sf-dd">Eliminación de datos</span>
+              <span id="sf-dd">Data Deletion</span>
             </a>
             <a
               class="sidebar-ext-link"
@@ -1188,113 +1307,11 @@
         </div>
       </aside>
 
-      <!-- MAIN CONTENT -->
       <main class="content">
-        <!-- SECTION 1 -->
         <div class="policy-section" id="s1">
-          <div class="section-head open" onclick="toggleSec(this)">
-            <div class="sec-num">01</div>
-            <div class="sec-title">Cómo solicitar la eliminación de datos</div>
-            <div class="sec-chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <polyline points="18 15 12 9 6 15" />
-              </svg>
-            </div>
-          </div>
-          <div class="section-body-wrap open">
-            <div class="body-h4">1. Automática (revocar acceso a la app)</div>
-            <p>
-              Vaya a la configuración de su cuenta de
-              <strong>Facebook > Apps y sitios web</strong> (o a la
-              configuración de su cuenta de
-              <strong>Instagram > Apps y sitios web</strong>), busque nuestra
-              aplicación y elimínela. Esto nos notifica automáticamente y revoca
-              de inmediato todos los tokens de acceso. Sus datos serán
-              eliminados dentro de un plazo de 30 días.
-            </p>
-
-            <div class="body-h4" style="margin-top: 24px">
-              2. Por correo electrónico
-            </div>
-            <p>
-              Envíe una solicitud de eliminación de datos a
-              <a href="mailto:privacy@icq24.com">privacy@icq24.com</a>,
-              incluyendo el nombre o identificador de la cuenta que utilizó.
-              Confirmaremos la recepción y procesaremos la eliminación dentro de
-              un plazo de 30 días.
-            </p>
-          </div>
-        </div>
-
-        <!-- SECTION 2 -->
-        <div class="policy-section" id="s2">
-          <div class="section-head open" onclick="toggleSec(this)">
-            <div class="sec-num">02</div>
-            <div class="sec-title">Qué se elimina</div>
-            <div class="sec-chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <polyline points="18 15 12 9 6 15" />
-              </svg>
-            </div>
-          </div>
-          <div class="section-body-wrap open">
-            <p style="margin-bottom: 12px">
-              Una vez recibida su solicitud de eliminación, eliminaremos:
-            </p>
-            <ul class="purpose-list">
-              <li>
-                <div class="purpose-badge">
-                  <i class="fa-solid fa-trash-can"></i>
-                </div>
-                <span
-                  >Su información de perfil y los identificadores de
-                  plataforma.</span
-                >
-              </li>
-              <li>
-                <div class="purpose-badge"><i class="fa-solid fa-key"></i></div>
-                <span
-                  >Todos los tokens de acceso almacenados y las credenciales
-                  OAuth.</span
-                >
-              </li>
-              <li>
-                <div class="purpose-badge">
-                  <i class="fa-solid fa-message"></i>
-                </div>
-                <span
-                  >El historial de mensajes y los datos de conversación
-                  asociados a su cuenta.</span
-                >
-              </li>
-            </ul>
-            <p style="margin-top: 16px">
-              Para fines de auditoría y cumplimiento legal, conservaremos
-              únicamente un registro anonimizado (un hash unidireccional que no
-              puede identificarlo) que confirme que se procesó una eliminación.
-            </p>
-          </div>
-        </div>
-
-        <!-- SECTION 3 -->
-        <div class="policy-section" id="s3">
           <div class="section-head" onclick="toggleSec(this)">
-            <div class="sec-num">03</div>
-            <div class="sec-title">Tiempo de procesamiento</div>
+            <div class="sec-num">01</div>
+            <div class="sec-title" id="s1-title">Information We Collect</div>
             <div class="sec-chevron">
               <svg
                 width="14"
@@ -1309,20 +1326,622 @@
             </div>
           </div>
           <div class="section-body-wrap">
-            <p>
-              Las solicitudes de eliminación de datos se procesan de forma
-              predeterminada dentro de
-              <strong>un plazo de 30 días</strong>. Usted recibirá una
-              confirmación una vez que sus datos hayan sido eliminados.
+            <p id="s1-intro">
+              When you interact with our services through Meta platforms,
+              <strong>ICQ24 INC</strong> may collect the following categories of
+              information:
             </p>
+
+            <div class="data-grid">
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt1-label">Profile</div>
+                </div>
+                <ul>
+                  <li id="dt1-1">Name and profile picture</li>
+                  <li id="dt1-2">
+                    Platform-specific identifiers, such as: Page-Scoped IDs,
+                    Instagram User IDs, and equivalent identifiers provided by
+                    Meta.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-message"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt2-label">Messages</div>
+                </div>
+                <ul>
+                  <li id="dt2-1">Text messages</li>
+                  <li id="dt2-2">Images and videos</li>
+                  <li id="dt2-3">Audio files</li>
+                  <li id="dt2-4">Documents</li>
+                  <li id="dt2-5">
+                    Interactive responses sent through the platform
+                  </li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt3-label">
+                    Conversation Data
+                  </div>
+                </div>
+                <ul>
+                  <li id="dt3-1">Message timestamps</li>
+                  <li id="dt3-2">Delivery statuses</li>
+                  <li id="dt3-3">Read receipts</li>
+                  <li id="dt3-4">Conversation metadata</li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt4-label">
+                    Page and Account Data
+                  </div>
+                </div>
+                <div class="data-list-description">
+                  When a business account connects via OAuth, we may collect:
+                </div>
+                <ul>
+                  <li id="dt4-1">Facebook Pages information</li>
+                  <li id="dt4-2">Instagram Business account details</li>
+                  <li id="dt4-3">Associated access tokens</li>
+                  <li id="dt4-4">Authorization and connection information</li>
+                </ul>
+              </div>
+
+              <div class="data-tile">
+                <div class="data-tile-head">
+                  <div class="data-tile-icon ic-blue">
+                    <i class="fa-solid fa-suitcase"></i>
+                  </div>
+                  <div class="data-tile-label" id="dt5-label">
+                    Technical Data
+                  </div>
+                </div>
+                <div class="data-list-description">
+                  When you use our services, we automatically collect technical
+                  information for security, monitoring, and support purposes,
+                  including:
+                </div>
+                <ul>
+                  <li id="dt5-1">IP Address</li>
+                  <li id="dt5-2">Device identifiers</li>
+                  <li id="dt5-3">Browser type and version</li>
+                  <li id="dt5-4">Server access logs</li>
+                  <li id="dt5-5">Connection timestamps</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="notice-box" id="s1-notice">
+              <strong>Technical Data:</strong> Technical data —including IP
+              address, device identifiers, browser type, and server logs— is
+              automatically collected when using our services for security,
+              monitoring, and technical support purposes.
+            </div>
           </div>
         </div>
 
-        <!-- SECTION 4 -->
+        <div class="policy-section" id="s2">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">02</div>
+            <div class="sec-title" id="s2-title">
+              How We Use Your Information
+            </div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s2-intro">
+              The collected information is used
+              <strong>exclusively</strong> for the following operational
+              purposes:
+            </p>
+
+            <ul class="purpose-list" id="purpose-list">
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-message"></i>
+                </div>
+                <span id="pu1"
+                  >Facilitate communication between businesses and customers
+                  through Facebook Messenger, Instagram Direct, and
+                  WhatsApp.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <span id="pu2"
+                  >Manage, route, and deliver messages between businesses and
+                  users through our unified inbox.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span id="pu3"
+                  >Process webhook events and notifications from Meta to ensure
+                  real-time message delivery.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <span id="pu4"
+                  >Manage OAuth authentication flows and maintain authorized
+                  connections between businesses and Meta platforms.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <span id="pu5"
+                  >Provide message statuses: sent, delivered, and read.</span
+                >
+              </li>
+              <li>
+                <div class="purpose-badge">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <span id="pu6"
+                  >Maintain the security, integrity, and availability of our
+                  services, including prevention of unauthorized access and
+                  technical monitoring.</span
+                >
+              </li>
+            </ul>
+
+            <div class="body-h4" id="s2-no-title">
+              What we DO NOT do with your data
+            </div>
+            <ul class="no-list" id="no-list">
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no1"
+                  >Use data from Meta APIs for advertising or ad targeting</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no2"
+                  >Build user profiles for commercial profiling purposes</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no3"
+                  >Sell, lease, or trade personal information to third
+                  parties</span
+                >
+              </li>
+              <li>
+                <div class="no-badge">✕</div>
+                <span id="no4"
+                  >Use the data for any purpose not described in this
+                  policy</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="policy-section" id="s3">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">03</div>
+            <div class="sec-title" id="s3-title">Data Storage and Security</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <div class="sec-grid">
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st1-title">Secure Infrastructure</strong>
+                  <span id="st1-desc"
+                    >All information is stored on secure servers located in the
+                    <strong>United States, Puerto Rico</strong>, and/or
+                    corresponding cloud infrastructure.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st2-title">Encryption</strong>
+                  <span id="st2-desc"
+                    >Data is protected through encryption in transit and at
+                    rest, using standards such as
+                    <strong>TLS 1.2 or higher.</strong></span
+                  >
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st3-title">Access Control</strong>
+                  <span id="st3-desc"
+                    >We implement security measures aligned with industry
+                    standards to prevent unauthorized access, alteration, loss,
+                    or disclosure of information.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st4-title">Webhook Verification</strong>
+                  <span id="st4-desc"
+                    >Webhook payloads are verified using
+                    <strong>HMAC-SHA256</strong> signatures to validate their
+                    authenticity.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st5-title">Token Security</strong>
+                  <span id="st5-desc"
+                    >Access to information is restricted exclusively to
+                    authorized personnel under confidentiality obligations and
+                    the principle of least privilege.
+                  </span>
+                </div>
+              </div>
+              <div class="sec-tile">
+                <div class="sec-tile-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <div class="sec-tile-content">
+                  <strong id="st6-title">Incident Response</strong>
+                  <span id="st6-desc"
+                    >Industry-standard security measures implemented to detect,
+                    prevent, and respond to unauthorized access.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="policy-section" id="s4">
           <div class="section-head" onclick="toggleSec(this)">
             <div class="sec-num">04</div>
-            <div class="sec-title" id="s7-title">Contáctenos</div>
+            <div class="sec-title" id="s4-title">Information Sharing</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s4-intro">
+              <strong>ICQ24 INC does not sell</strong> Information may be shared
+              only with:
+            </p>
+
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th id="th1">Recipient</th>
+                  <th id="th2">Purpose</th>
+                  <th id="th3">Shared Data</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="share1-who">
+                    Meta Platforms<br /><small
+                      style="font-weight: 400; color: var(--gray-mid)"
+                      >Facebook, Instagram, WhatsApp</small
+                    >
+                  </td>
+                  <td id="share1-why">
+                    When necessary for message delivery and the operation of
+                    Facebook Messenger, Instagram, and WhatsApp APIs.
+                  </td>
+                  <td id="share1-what">
+                    As required by Meta APIs to route and deliver messages.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="share2-who">Authorized Business Partners</td>
+                  <td id="share2-why">
+                    Businesses that use our service to communicate with their
+                    customers receive the relevant conversation data.
+                  </td>
+                  <td id="share2-what">
+                    Sent messages, basic profile information, and data related
+                    to the conversation.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="share3-who">Legal and Regulatory Authorities</td>
+                  <td id="share3-why">
+                    When required by applicable law, regulation, governmental
+                    authority, or valid legal process.
+                  </td>
+                  <td id="share3-what">
+                    Limited to what is strictly required by the applicable legal
+                    obligation.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="policy-section" id="s5">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">05</div>
+            <div class="sec-title" id="s5-title">Your Rights</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s5-intro">
+              In accordance with applicable data protection legislation and Meta
+              platform policies, you have the following rights regarding your
+              personal information:
+            </p>
+
+            <div class="rights-grid">
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-clipboard"></i>
+                </div>
+                <strong id="r1-title">Access</strong>
+                <p id="r1-desc">
+                  Request access to the personal data that ICQ24 INC holds about
+                  you.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-pencil"></i>
+                </div>
+                <strong id="r2-title">Correction</strong>
+                <p id="r2-desc">
+                  Request correction or update of inaccurate or incomplete
+                  personal data.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                <strong id="r3-title">Deletion</strong>
+                <p id="r3-desc">
+                  Request the deletion of your personal data from our systems.
+                  See deletion path below.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-lock-open"></i>
+                </div>
+                <strong id="r4-title">Revoke OAuth</strong>
+                <p id="r4-desc">
+                  Revoke app permissions at any time from your Facebook or
+                  Instagram settings.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <strong id="r5-title">Opt-out of Messages</strong>
+                <p id="r5-desc">
+                  Contact the business directly to stop receiving
+                  communications.
+                </p>
+              </div>
+              <div class="right-tile">
+                <div class="right-tile-icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <strong id="r6-title">Formal Complaint</strong>
+                <p id="r6-desc">
+                  Lodge a complaint with the competent regulatory authority if
+                  your rights are violated.
+                </p>
+              </div>
+            </div>
+
+            <div class="body-h4" id="deletion-title" style="margin-top: 24px">
+              How to Request Data Deletion
+            </div>
+            <div class="deletion-opts">
+              <div class="deletion-opt">
+                <div class="deletion-opt-head">
+                  <i class="fa-solid fa-link"></i>
+                  <span id="del1-head">Option 1 — Automatic</span>
+                </div>
+                <p id="del1-desc">
+                  Go to
+                  <strong>Facebook Settings → Apps and Websites</strong>
+                  (or equivalent on Instagram), find ICQ24, and remove the app.
+                  This automatically revokes access and schedules data deletion.
+                </p>
+              </div>
+              <div class="deletion-opt">
+                <div class="deletion-opt-head">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span id="del2-head">Option 2 — By email</span>
+                </div>
+                <p id="del2-desc">
+                  Send a deletion request to
+                  <a href="mailto:privacy@icq24.com">privacy@icq24.com</a>
+                  indicating your account name or identifier. We will
+                  acknowledge receipt and process it within 30 days.
+                </p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <a
+                class="btn-primary"
+                href="https://www.icq24.com/meta-data-deletion"
+                target="_blank"
+              >
+                <i class="fa-solid fa-trash-can"></i>
+                <span id="del-btn">Data Deletion Page</span>
+              </a>
+              <a class="btn-secondary" href="mailto:privacy@icq24.com">
+                <i class="fa-solid fa-envelope"></i>
+                privacy@icq24.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="policy-section" id="s6">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">06</div>
+            <div class="sec-title" id="s6-title">Data Retention</div>
+            <div class="sec-chevron">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </div>
+          </div>
+          <div class="section-body-wrap">
+            <p id="s6-intro">
+              We retain message data and conversation history for the time
+              required by the business relationship, contractual obligations,
+              and applicable law.
+            </p>
+
+            <div class="retention-card">
+              <div class="ret-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="ret-content">
+                <strong id="ret-title">Deletion Window: 30 days</strong>
+                <span id="ret-desc"
+                  >When you request the deletion of your data or disconnect the
+                  integration, your data will be deleted within a maximum of
+                  <b>30 days</b>. Expired or revoked access tokens are
+                  automatically discarded. For auditing purposes, we only retain
+                  an anonymous one-way hash confirming that a deletion was
+                  processed — this record cannot be used to identify you.</span
+                >
+              </div>
+            </div>
+
+            <p id="s6-governed">Data retention periods are governed by:</p>
+            <ul class="no-list" id="ret-list" style="margin-top: 10px">
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl1"
+                  >The duration of the business relationship between ICQ24 and
+                  the company using our service</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl2"
+                  >Applicable U.S. federal law and data protection
+                  regulations</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl3"
+                  >The Meta Platform Terms and Meta's data retention
+                  requirements</span
+                >
+              </li>
+              <li style="border: none; padding: 5px 0">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="rl4"
+                  >Legitimate operational needs for security audit logs and
+                  incident investigation</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="policy-section" id="s7">
+          <div class="section-head" onclick="toggleSec(this)">
+            <div class="sec-num">07</div>
+            <div class="sec-title" id="s7-title">Contact Us</div>
             <div class="sec-chevron">
               <svg
                 width="14"
@@ -1338,14 +1957,14 @@
           </div>
           <div class="section-body-wrap">
             <p id="s7-intro">
-              Para consultas relacionadas con privacidad, solicitudes de acceso,
-              eliminación de datos o ejercicio de cualquiera de sus derechos,
-              contáctenos mediante los siguientes canales:
+              For inquiries related to privacy, access requests, data deletion,
+              or the exercise of any of your rights, contact us through the
+              following channels:
             </p>
 
             <div class="contact-dark">
               <div class="contact-dark-head" id="contact-head">
-                ICQ24 INC — Contacto de Privacidad
+                ICQ24 INC — Privacy Contact
               </div>
               <div class="contact-grid-2">
                 <div class="contact-item">
@@ -1353,7 +1972,7 @@
                     <i class="fa-solid fa-house"></i>
                   </div>
                   <div>
-                    <label id="cl1">Compañía</label>
+                    <label id="cl1">Company</label>
                     <span>ICQ24 INC</span>
                   </div>
                 </div>
@@ -1362,7 +1981,7 @@
                     <i class="fa-solid fa-envelope"></i>
                   </div>
                   <div>
-                    <label id="cl2">Email de Privacidad</label>
+                    <label id="cl2">Privacy Email</label>
                     <a href="mailto:privacy@icq24.com">privacy@icq24.com</a>
                   </div>
                 </div>
@@ -1371,8 +1990,8 @@
                     <i class="fa-solid fa-phone"></i>
                   </div>
                   <div>
-                    <label id="cl3">Teléfono</label>
-                    <a href="tel:+01 805-888-0024">+01 805-888-0024</a>
+                    <label id="cl3">Phone</label>
+                    <a href="tel:+1 805-888-0024">+1 805-888-0024</a>
                   </div>
                 </div>
                 <div class="contact-item">
@@ -1380,7 +1999,7 @@
                     <i class="fa-solid fa-globe"></i>
                   </div>
                   <div>
-                    <label id="cl3">Sitio web</label>
+                    <label id="cl3">Website</label>
                     <a href="https://www.icq24.com/" target="_blank"
                       >www.icq24.com</a
                     >
@@ -1391,7 +2010,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                   </div>
                   <div>
-                    <label id="cl4">Dirección</label>
+                    <label id="cl4">Address</label>
                     <span
                       >URB COLLEGEVILLE 2009 CALLE ABERDEEN<br />GUAYNABO PR
                       00969-4730 · USA</span
@@ -1403,7 +2022,7 @@
                     <i class="fa-solid fa-trash-can"></i>
                   </div>
                   <div>
-                    <label id="cl5">Eliminación de datos</label>
+                    <label id="cl5">Data Deletion</label>
                     <a
                       href="https://www.icq24.com/meta-data-deletion"
                       target="_blank"
@@ -1416,19 +2035,19 @@
           </div>
         </div>
 
-        <!-- CROSS-LINKS -->
         <div class="cross-links" id="crosslinks">
-          <h3>Polí­ticas relacionadas</h3>
+          <h3 id="cl-head">Related Policies</h3>
           <p
             style="font-size: 13px; color: var(--gray-mid); margin-bottom: 16px"
+            id="cl-sub"
           >
-            Estos Términos de Servicio deben leerse junto con los siguientes
-            documentos:
+            This Privacy Policy should be read in conjunction with the following
+            documents:
           </p>
           <div class="cross-grid">
             <a
               class="cross-item"
-              href="https://www.icq24.com/meta-privacy-policy"
+              href="https://www.icq24.com/meta-terms-of-service"
               target="_blank"
             >
               <div class="cross-item-icon">
@@ -1449,8 +2068,8 @@
                 </svg>
               </div>
               <div>
-                <strong>Política de Privacidad</strong>
-                <span>icq24.com/meta-privacy-policy</span>
+                <strong id="cl-tos">Terms of Service</strong>
+                <span>icq24.com/meta-terms-of-service</span>
               </div>
             </a>
             <a
@@ -1473,7 +2092,7 @@
                 </svg>
               </div>
               <div>
-                <strong>Eliminación de Datos</strong>
+                <strong id="cl-dd">Data Deletion</strong>
                 <span>icq24.com/meta-data-deletion</span>
               </div>
             </a>
@@ -1510,14 +2129,6 @@
         header.classList.toggle("open");
         body.classList.toggle("open");
       }
-
-      // Open first two sections on load
-      document.querySelectorAll(".policy-section").forEach((s, i) => {
-        if (i < 2) {
-          s.querySelector(".section-head").classList.add("open");
-          s.querySelector(".section-body-wrap").classList.add("open");
-        }
-      });
 
       // ── ACTIVE SIDEBAR LINK ────────────────────────────────────────
       const sections = document.querySelectorAll(".policy-section[id]");
